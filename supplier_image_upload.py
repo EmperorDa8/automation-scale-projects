@@ -9,7 +9,7 @@ def image_upload(x):
     if x.endswith("jpeg"):
         with open(save_path+x, "rb")as opn:
             r=requests.post(url,files={"file":opn})
-            print("process done")
+        print("process done")
 
 
 if __name__ =="__main__":
